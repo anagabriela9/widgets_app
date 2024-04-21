@@ -32,5 +32,15 @@ class AppTheme {
       centerTitle: false,
     )
   );
+
+
+// Crea un nuevo método que regresa una nueva instancia del apptheme - copywith para copiar la instamcia de la clase
+  AppTheme copyWith({
+    int? selectedColor,
+    bool? isDarkmode,
+  }) => AppTheme(
+    selectedColor: selectedColor ?? this.selectedColor,
+    isDarkmode: isDarkmode ?? this.isDarkmode,
+  );
   
 }
